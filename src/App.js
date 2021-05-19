@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import './App.css';
+import Form from './Form.js'
 
 
 class App extends Component {
@@ -17,7 +18,7 @@ class App extends Component {
           <input
             name="name"
             text="text"
-            placeholder="Enter Email"
+            placeholder="Enter UserName"
 
           />
           <br />
@@ -25,17 +26,21 @@ class App extends Component {
           <input
             name="name"
             text="text"
-            placeholder="Enter Password"
+            placeholder="Enter Email"
 
           />
           <br />
+
+
           <button className="btn">Login</button>
           <br />
           <p>
             <a href="https://github.com/ojhal">Sign In </a>
           </p>
         </form>
-      </div>
+        <hr />
+        <Form />
+      </div >
 
     );
   }

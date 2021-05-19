@@ -1,0 +1,15 @@
+.container {
+  margin: 20px;
+  padding: 30px;
+}
+
+.btn {
+  margin-top: 20px;
+  color: white;
+  background-color: blue;
+  border-color: #e7e7e7;
+}
+
+.btn:hover {
+  background: red;
+}

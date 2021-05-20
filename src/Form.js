@@ -10,7 +10,7 @@ class Form extends Component {
   render() {
     return (
       <div style={{ textAlign: "center" }}>
-        <h1 style={{ color: "blue" }}>Screen2: Sing Up Form</h1>
+        <h1 style={{ color: "blue" }}>Screen2: SingUp Form</h1>
         <form className="container">
           <p>UserName:</p>
           <input

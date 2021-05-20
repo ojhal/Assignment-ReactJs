@@ -25,12 +25,11 @@ class User extends Component {
     this.setState({ [nam]: val });
   }
 
-
   render() {
     return (
       <div>
         <h1 style={{ color: "blue" }}>Screen3: User Detail Page</h1>
-        <form className="container">
+        <form className="container" >
           <p>UserName:</p>
           <input
             name="username"
@@ -91,10 +90,11 @@ class User extends Component {
           />
           <p style={{ color: "blue" }}>{this.state.address}</p>
           <br />
-          <button className="btn">LogOut</button>
+          <button className="btn" >LogOut</button>
 
         </form>
       </div>
+
 
     );
   }

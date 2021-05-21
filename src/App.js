@@ -15,6 +15,8 @@ class App extends Component {
 
 
   render() {
+
+    const content = ['Ojhal Patwa', 'patkarojhal26@gmail.com', '123456789', '123456789', 'Street507']
     return (
       <div style={{ textAlign: "center" }}>
         <h1 style={{ color: "blue" }}>Screen1: LogIn Form</h1>
@@ -44,7 +46,7 @@ class App extends Component {
         <hr />
         <Form />
         <hr />
-        <User />
+        <User list={content} />
       </div >
 
     );

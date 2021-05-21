@@ -9,6 +9,7 @@ class User extends Component {
       Email: '',
       password: '',
       address: '',
+      show: false
 
     };
   }
@@ -25,10 +26,21 @@ class User extends Component {
     this.setState({ [nam]: val });
   }
 
+  handleClick = (e) => {
+    e.preventDefault()
+    this.setState({
+      show: !this.state.show
+
+    })
+
+  }
 
 
 
   render() {
+    const contentItem = this.props.list.map((contents) =>
+      <li>{contents}{this.props.name}</li>
+    );
     return (
       <div>
         <h1 style={{ color: "blue" }}>Screen3: User Detail Page</h1>
@@ -93,7 +105,16 @@ class User extends Component {
           />
           <p style={{ color: "blue" }}>{this.state.address}</p>
           <br />
-          <button className="btn"  >LogOut</button>
+          < button className="btn" onClick={this.handleClick}>
+            LogOut
+          </button >
+
+
+
+
+
+          {this.state.show ? <ul style={{ color: "blue" }}>{contentItem}</ul> : null}
+          {/* <button className="btn"  >LogOut</button> */}
 
         </form>
       </div>

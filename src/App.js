@@ -5,11 +5,12 @@ import User from './User.js'
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-
+  shoot() {
+    alert("Wrong Information!");
   }
+
+
+
 
 
 
@@ -34,7 +35,7 @@ class App extends Component {
             placeholder="Enter Email"
           />
           <br />
-          <button className="btn">LogIn</button>
+          <button className="btn" onClick={this.shoot}>LogIn</button>
           <br />
           <p>
             <a href="https://github.com/ojhal">Sign In </a>
